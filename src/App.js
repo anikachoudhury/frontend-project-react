@@ -1,10 +1,11 @@
 
 import './App.css';
+import Add from './pages/add';
 
 function App() {
   return (
     <div className="App">
-      <p>hello world</p>
+      <Add />
     </div>
   );
 }
