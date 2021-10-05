@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import './FormUserDetails.css';
 
 export class FormUserDetails extends Component {
      continue = e => {
@@ -10,7 +11,7 @@ export class FormUserDetails extends Component {
         const { values, handleChange } = this.props;
     
         return (
-            <div>
+            <div className="add">
                 <h1>Add a new patient</h1>
 
                 <form >
@@ -22,6 +23,7 @@ export class FormUserDetails extends Component {
 
                     <label for="sex">Sex:</label><br/>
                     <select id="sex" name="sex" onChange={handleChange('sex')} defaultValue={values.sex}>
+                        <option>Select Option</option>
                         <option value="female">Female</option>
                         <option value="male">Male</option>
                         <option value="other">Other</option>
@@ -41,6 +43,7 @@ export class FormUserDetails extends Component {
 
                     <label for="covid">Covid Risk:</label><br/>
                     <select id="covid" name="covid" onChange={handleChange('covidRisk')} defaultValue={values.covidRisk}>
+                        <option>Select Option</option>
                         <option value="high">High</option>
                         <option value="low">Low</option>
                         <option value="mid">Mid</option>
@@ -48,27 +51,31 @@ export class FormUserDetails extends Component {
 
                     <label for="risk">Risk Assessment:</label><br/>
                     <select id="risk" name="risk" onChange={handleChange('riskAssessment')} defaultValue={values.riskAssessment}>
-                        <option value="highrisk">High Risk</option>
-                        <option value="lowrisk">Low Risk</option>
-                        <option value="midrisk">Mid Risk</option>
+                        <option>Select Option</option>
+                        <option value="high risk">High Risk</option>
+                        <option value="low risk">Low Risk</option>
+                        <option value="mid risk">Mid Risk</option>
                     </select><br/>
 
                     <label for="doctor">Assign a Doctor:</label><br/>
                     <select id="doctor" name="doctor" onChange={handleChange('doctor')} defaultValue={values.doctor}>
-                        <option value="doc1">doc 1</option>
-                        <option value="doc2">doc 2</option>
-                        <option value="doc3">doc 3</option>
+                        <option>Select Option</option>
+                        <option value="Doctor Chen">Doctor Chen</option>
+                        <option value="Doctor Omar">Doctor Omar</option>
+                        <option value="Doctor Ali">Doctor Ali</option>
                     </select><br/>
 
                     <label for="ward">Assign a Ward:</label><br/>
                     <select id="ward" name="ward" onChange={handleChange('ward')} defaultValue={values.ward} >
-                        <option value="ward1">ward 1</option>
-                        <option value="ward2">ward 2</option>
-                        <option value="ward3">ward 3</option>
+                        <option>Select Option</option>
+                        <option value="Gynaecology">Gynaecology</option>
+                        <option value="Renology">Renology</option>
+                        <option value="Cardiology">Cardiology</option>
                     </select><br/>
 
-                    <input type="submit" class="addPatient" value="Add Patient" onClick={this.continue}></input>
+                    
                 </form>
+                <input type="submit" class="addPatient" value="Add Patient" onClick={this.continue}></input>
             </div>
         )
     }
