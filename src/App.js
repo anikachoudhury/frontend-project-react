@@ -1,11 +1,13 @@
 
 import './App.css';
-import Add from './pages/add';
+import Add from './pages/Add';
+import Search from './pages/Search';
+import UserForm from './components/UserForm';
 
 function App() {
   return (
     <div className="App">
-      <Add />
+      <UserForm />
     </div>
   );
 }
