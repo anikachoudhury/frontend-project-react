@@ -9,8 +9,7 @@ import HealthFacts from './pages/HealthFacts';
 function App() {
   return (
     <div>
-      <Login />
-      <HealthFacts />
+      
     </div>
   );
 }
