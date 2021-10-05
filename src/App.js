@@ -1,10 +1,16 @@
 
 import './App.css';
+import Navbar from './Components/Navbar'; //use component within app.js
+import Home from './pages/home'
+import Middle from './Components/Middle';
 
 function App() {
   return (
     <div className="App">
-      <p>hello world</p>
+      <Navbar />
+      <Home />
+      <Middle/>
+     
     </div>
   );
 }
