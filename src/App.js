@@ -1,16 +1,17 @@
 
-import './App.css';
+
 // import Add from './pages/Add';
 // import Search from './pages/Search';
-import UserForm from './components/UserForm';
-import Login from './pages/Login';
-import HealthFacts from './pages/HealthFacts';
+
+import Navbar from './Components/Navbar'; //use component within app.js
+import Home from './pages/home'
+import Middle from './Components/Middle';
 
 function App() {
   return (
-    <div>
-      
-    </div>
+    <div></div>
+    
+
   );
 }
 
