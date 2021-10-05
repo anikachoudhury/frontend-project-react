@@ -1,15 +1,15 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 //bootstrap framework that gives lots of UI elements - npm install bootstrap
-
+import {Link} from 'react-router-dom';
 function Navbar() {
   //create a Navbar function
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+        <Link className="navbar-brand" to="/">
           Bicomaas Health
-        </a>
+        </Link>
        <button
           className="navbar-toggler"
           type="button"
@@ -23,55 +23,32 @@ function Navbar() {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+            
+              <Link className="nav-link" to="/">
+                <li>Home Page</li>
+              </Link>
+            
+            
+              <Link className="nav-link active" aria-current="page" to="/addpatient">
+                <li>Add Paitent</li>
+              </Link>
+            
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Home Page
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
-                Add Paitent
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Search Patient
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to="/healthfacts">
                 Training
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to="/pin">
                 Pin Board
-              </a>
+              </Link>
             </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdownMenuLink"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Staff
-              </a>
-              <div
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <a class="dropdown-item" href="#">
-                  Login
-                </a>
-                <a class="dropdown-item" href="#">
-                  Logout
-                </a>
-              </div>
+            <li className="nav-item">
+              <Link className="nav-link" to="/login">
+                Login
+              </Link>
             </li>
+            
           </ul>
         </div>
       </div>

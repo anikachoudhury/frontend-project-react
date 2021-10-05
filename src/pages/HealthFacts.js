@@ -85,7 +85,7 @@ that is now referred to as medical quality
 improvement.’</p>
 <h2>TRAINING DATES</h2>
 <p className='Health__facts__paragraph'>Training will be held over Zoom.
-26th November 2021 & 29th November 2021
+26th November 2021 and 29th November 2021
 Zoom link will be sent via email closer to time</p>
 </section>
 </body>
