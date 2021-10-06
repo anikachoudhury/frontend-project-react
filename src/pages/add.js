@@ -20,8 +20,9 @@ function Add(props) {
     }
 
     return (
+        <div className="addBackground">
         <div className="add">
-            <h1>Add a new patient</h1>
+            <h1>ADD A NEW PATIENT</h1>
 
             <form onSubmit={handleNewPatient}>
                 <label for="firstname">First Name:</label><br/>
@@ -97,6 +98,7 @@ function Add(props) {
                 </tr>
                 </table>
             </div>
+        </div>
         </div>
     )
 }

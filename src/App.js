@@ -4,26 +4,28 @@
 // import Search from './pages/Search';
 
 import React from 'react';
-import Home from './pages/home'
-import Navbar from './components/Navbar';
-
-import UserForm from './components/UserForm';
+import Home from './pages/home';
+import Navbar from './Components/Navbar';
+import UserForm from './Components/UserForm';
+import Footer from './Components/Footer';
 import Login from './pages/Login';
 import HealthFacts from './pages/HealthFacts';
+import PinBoard from './pages/PinBoard';
 import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
 
 function App() {
   return (
     <Router>
       <div className="app">
-        <Navbar />
+      <Navbar/>
         <Switch>
-          <Route exact path="/" component={Home}/>
-          <Route path="/login" component={Login}/>
+          <Route exact path="/" component={Login}/>
+          <Route path="/home" component={Home}/>
           <Route path="/addpatient" component={UserForm}/>
           <Route path="/healthfacts" component={HealthFacts}/>
+          <Route path="/pin" component={PinBoard}/>
         </Switch>
+        <Footer/>
       </div>
     </Router>
   );

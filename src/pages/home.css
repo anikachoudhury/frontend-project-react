@@ -1,5 +1,28 @@
-.doctorimg img {
-    width: 70%;
-    margin-left: 17%;
+.homeBackground{
+    background-image: url("https://cdn.the-scientist.com/assets/articleNo/69156/aImg/43446/colorful-coronavirus-mixing-paint-800-l.jpg");
 }
 
+.homeBackground {
+    background-color: #00393B;
+    padding: 20px;
+    color: white;
+    text-align: justify;
+}
+
+.homeText {
+    text-align: justify;
+    color: white;
+    font-family: Montserrat, sans-serif;
+}
+
+*{
+    font-family: Montserrat, sans-serif;
+}
+
+.homebody {
+    display: inline-block;
+    background-color: #00393B;
+    padding: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+}

@@ -1,10 +1,12 @@
 
 import React, {Component} from 'react';
 import './Login.css'; 
+import {Link} from 'react-router-dom';
 
 export default class Login extends Component {
     render (){
         return (
+          <div className="loginBackground">
             <div className="body text-center">
       <main className="form-signin">
   <form>
@@ -25,11 +27,14 @@ export default class Login extends Component {
         <input type="checkbox" value="remember-me"/> Remember me
       </label>
     </div>
+    <Link to="/home">
     <button className="w-100 btn btn-lg btn-primary, signin" type="submit">SIGN IN</button>
+    </Link>
     <p className="mt-5 mb-3 text-muted">&copy; 2021</p>
   </form>
 
 </main>
+</div>
 </div>
         );
     }

@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 .add {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #00393B;
+    margin-left: 300px;
+    margin-right: 300px;
 }
 
 form {
@@ -10,3 +17,19 @@ form {
     text-align: center;
 }
 
+.addBackground {
+    background-image: url("https://cdn.the-scientist.com/assets/articleNo/69156/aImg/43446/colorful-coronavirus-mixing-paint-800-l.jpg");
+}
+
+
+.searchpatient{
+font-family: Montserrat;
+width:100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+}
+    
+    
+    
+  

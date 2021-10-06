@@ -1,0 +1,15 @@
+/*Footer Section*/
+.footer {
+    background-color: #00393B;
+    padding: 40px 0px;
+    color: white;
+    margin-top: 10px;
+  }
+  
+  .footertext {
+    font-size:12px;
+    margin-bottom: 0;
+    margin-left: 50px;
+    font-family: Montserrat, sans-serif;
+  }
+  
